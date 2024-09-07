@@ -14,67 +14,116 @@
 <div style="height:100px;"></div>
 <div class="container mt-5">
     <div class="row">
-        <div class="col-lg-8">
-            <div class="job_details_header shadow-sm">
-                <div class="single_jobs white-bg d-flex justify-content-between p-3 border rounded">
-                    <div class="jobs_left d-flex align-items-center">
-                        <div class="thumb me-3">
-                            <img src="img/svg_icon/1.svg" alt="" class="img-fluid">
-                        </div>
-                        <div class="jobs_content">
-                            <h2 class="featurette-heading text-center py-5 slide-top"> Invest <span class="text-muted">(Binet Gold App)</span></h2>
-                           
-                        </div>
-                    </div>
-                    <div class="jobs_right">
-                        <div class="apply_now">
-                            <a class="heart_mark" href="#"><i class="ti-heart text-success"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="descript_wrap white-bg mt-4 p-3 border rounded shadow-sm">
-                <div class="single_wrap mb-3 slide-top">
-                    <h4>Binet Gold App</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
-                    <p>Variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
-                </div>
-                <div class="single_wrap mb-3 slide-top">
-                    <h4>Why to Invest?</h4>
-                    <ul>
-                        <li>The applicants should have experience in the following areas.</li>
-                        <li>Have sound knowledge of commercial activities.</li>
-                        <li>Leadership, analytical, and problem-solving abilities.</li>
-                        <li>Should have vast knowledge in IAS/ IFRS, Company Act, Income Tax, VAT.</li>
-                    </ul>
-                </div>
-                <div class="single_wrap mb-3 slide-top">
-                    <h4>What We Return ?</h4>
-                    <ul>
-                        <li>The applicants should have experience in the following areas.</li>
-                        <li>Have sound knowledge of commercial activities.</li>
-                        <li>Leadership, analytical, and problem-solving abilities.</li>
-                        <li>Should have vast knowledge in IAS/ IFRS, Company Act, Income Tax, VAT.</li>
-                    </ul>
-                </div>
-                <div class="single_wrap slide-top">
-                    <h4>Benefits</h4>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
-                </div>
-            </div>
-            <div class="apply_job_form white-bg mt-4 p-3 border rounded shadow-sm slide-top">
-                <h4>Apply for Invest</h4>
-                @{
-                    Html.RenderPartial("~/Views/jobApplies/Investorapply.cshtml");
-                }
-            </div>
-        </div>
+      
         @* Gallary Section *@
 
         <div class="container" style="width:80dvw; height:fit-content;">
             <div class="lightbox" data-mdb-lightbox-init>
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-7">
+                        <div class="job_details_header shadow-sm">
+                            <div class="single_jobs white-bg d-flex justify-content-between p-3 border rounded">
+                                <div class="jobs_left d-flex align-items-center">
+                                    <div class="thumb me-3">
+                                        <img src="img/svg_icon/1.svg" alt="" class="img-fluid">
+                                    </div>
+                                    <div class="jobs_content">
+                                        <h2 class="featurette-heading text-center py-5 slide-top"> Invest <span class="text-muted">(Binet Gold App)</span></h2>
+
+                                    </div>
+                                </div>
+                                <div class="jobs_right">
+                                    <div class="apply_now">
+                                        <a class="heart_mark" href="#"><i class="ti-heart text-success"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="descript_wrap white-bg mt-4 p-3 border rounded shadow-sm">
+                            <div class="single_wrap mb-3 slide-top">
+                                <h4>Binet Gold App</h4>
+                                <p>
+                                    Binet Gold App seamlessly synchronizes data with Points One, ensuring that information such as inventory levels, sales figures, and customer details are consistently updated across both platforms.
+                                </p>
+                                @* <p>Variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p> *@
+                            </div>
+                            <div class="single_wrap mb-3 slide-top">
+                                <h4>Why to Invest?</h4>
+                                <ul>
+                                    <li>Reduced manual data entry and improved accuracy with synchronized data.</li>
+                                    <li>Potential increase in sales and cost savings from reduced errors.</li>
+                                    <li>Enhanced customer service through up-to-date details and more effective marketing.</li>
+                                    <li>Streamlined operations with seamless real-time data synchronization and fewer data errors.</li>
+                                    <li>Improved decision-making with data-driven insights and enhanced reporting capabilities.</li>
+                                    <li>Competitive advantage through greater agility and increased customer satisfaction.</li>
+                               
+                                </ul>
+                            </div>
+                            <div class="single_wrap mb-3 slide-top">
+                                <h4>What We Return ?</h4>
+                                <ul>
+                                    <li>
+                                        <strong>Efficiency Gains:</strong>
+                                        <ul>
+                                            <li>Reduced Manual Data Entry: Automated synchronization reduces the need for manual data entry, saving time and reducing errors.</li>
+                                            <li>Improved Accuracy: Consistent data across platforms minimizes discrepancies, leading to more reliable information.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Financial Gains:</strong>
+                                        <ul>
+                                            <li>Increased Sales: Enhanced data insights and better inventory management can lead to improved sales and revenue.</li>
+                                            <li>Cost Savings: Reduction in labor costs associated with manual data management and fewer errors that can result in costly issues.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Customer Insights:</strong>
+                                        <ul>
+                                            <li>Better Customer Service: Access to updated customer details helps in providing personalized service and improving customer satisfaction.</li>
+                                            <li>Enhanced Marketing: More accurate customer data allows for more targeted and effective marketing campaigns.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="single_wrap slide-top">
+                                <h4>Benefits</h4>
+                                @* <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p> *@
+                                <p>The Binet Gold App, when integrated with Points One, offers numerous advantages that significantly enhance business operations. By streamlining processes and improving data management, it provides valuable benefits across various aspects of business performance. Here’s how:</p>
+
+                                <ul>
+                                    <li>
+                                        <strong>Streamlined Operations:</strong>
+                                        <ul>
+                                            <li>Seamless Integration: Real-time synchronization means that inventory levels, sales figures, and customer details are always up-to-date, leading to smoother operations.</li>
+                                            <li>Error Reduction: Less manual intervention reduces the risk of data errors and inconsistencies.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Improved Decision-Making:</strong>
+                                        <ul>
+                                            <li>Data-Driven Insights: With synchronized data, businesses can make more informed decisions based on accurate and up-to-date information.</li>
+                                            <li>Enhanced Reporting: Better access to consolidated data can improve reporting capabilities and business analytics.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>Competitive Advantage:</strong>
+                                        <ul>
+                                            <li>Agility: Faster response times and better data management can give your business a competitive edge in the market.</li>
+                                            <li>Customer Experience: Enhanced ability to understand and respond to customer needs can improve overall customer satisfaction and loyalty.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+
+                            </div>
+                        </div>
+                        <div class="apply_job_form white-bg mt-4 p-3 border rounded shadow-sm slide-top">
+                            <h4>Apply for Invest</h4>
+                            @{
+                                Html.RenderPartial("~/Views/jobApplies/Investorapply.cshtml");
+                            }
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
                         <img src="~/investscreenshots/binetlogin.webp"
                              data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
                              alt="Table Full of Spices"
@@ -83,13 +132,12 @@
                              data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
                              alt="Coconut with Strawberries"
                              class="w-100 shadow-1-strong rounded" />
-                    </div>
-                    <div class="col-lg-6">
                         <img src="~/investscreenshots/binettwo.webp"
                              data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
                              alt="Dark Roast Iced Coffee"
                              class="w-100 shadow-1-strong rounded" />
                     </div>
+        
                 </div>
             </div>
         </div>
