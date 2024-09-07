@@ -1,0 +1,84 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<div style="height:100px;"></div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="job_details_header shadow-sm">
+                <div class="single_jobs white-bg d-flex justify-content-between p-3 border rounded">
+                    <div class="jobs_left d-flex align-items-center">
+                        <div class="thumb me-3">
+                            <img src="img/svg_icon/1.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="jobs_content">
+                            <h2 class="featurette-heading text-center py-5 slide-top"> Frontend <span class="text-muted">Developer</span></h2>
+                            <div class="links_locat d-flex align-items-center">
+                                <div class="location me-3">
+                                    <p><i class="fa fa-map-marker text-success"></i> Kathmandu</p>
+                                </div>
+                                <div class="location">
+                                    <p><i class="fa fa-clock text-success"></i> Part-time</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jobs_right">
+                        <div class="apply_now">
+                            <a class="heart_mark" href="#"><i class="ti-heart text-success"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="descript_wrap white-bg mt-4 p-3 border rounded shadow-sm">
+                <div class="single_wrap mb-3 slide-top">
+                    <h4>Job Description</h4>
+                    <p>At Binet Technologies, we’re dedicated to creating innovative and user-friendly web solutions. Our team is passionate about pushing the boundaries of web development and delivering exceptional digital experiences. We’re seeking a talented Frontend Developer to join our dynamic team and contribute to exciting projects.</p>
+                </div>
+                <div class="single_wrap mb-3 slide-top">
+                    <h4>Responsibility</h4>
+                    <ul> <li>Develop and maintain user-friendly, responsive web interfaces using HTML, CSS, Bootstrap, and Tailwind CSS.</li> <li>Utilize JavaScript to create interactive features, focusing on efficient DOM manipulation.</li> <li>Collaborate with designers, backend developers, and other team members to translate design concepts into functional code.</li> <li>Write clean, maintainable, and efficient code while adhering to best practices and coding standards.</li> <li>Optimize applications for maximum speed and scalability.</li> <li>Identify and resolve bugs and performance issues.</li> <li>Stay updated with the latest industry trends, tools, and technologies.</li> </ul>
+                </div>
+                <div class="single_wrap mb-3 slide-top">
+                    <h4>Qualifications</h4>
+                    <ul> <li>Strong proficiency in HTML5 for structuring web content.</li> <li>Advanced knowledge of CSS3 for styling and layout.</li> <li>Experience with Bootstrap for responsive design.</li> <li>Familiarity with Tailwind CSS for utility-first styling.</li> <li>Proficiency in JavaScript, including DOM manipulation and event handling.</li> <li>1-3 years of professional experience in frontend development or a related field.</li> <li>Bachelor’s degree in Computer Science, Web Development, or a related field is preferred but not required.</li> <li>Ability to quickly learn new concepts and technologies.</li> <li>Strong analytical and problem-solving skills.</li> <li>Attention to detail and a commitment to high-quality work.</li> <li>Excellent communication and collaboration skills.</li> </ul>
+                </div>
+                <div class="single_wrap mb-3 slide-top">
+                    <h4>Benefits</h4>
+                    <ul> <li>Competitive salary and benefits package.</li> <li>Opportunities for professional growth and development.</li> <li>Flexible work hours and remote work options.</li> <li>A collaborative and innovative work environment.</li> </ul>
+                </div>
+                <div class="single_wrap mb-3 slide-top">
+                    <h4>How to Apply ?</h4>
+                    <p>Send your resume, portfolio, and a brief cover letter outlining your relevant experience and why you’re a great fit for this role to us.</p> <p>Binet Technologies is an equal-opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees.</p>
+                </div>
+            </div>
+            <div class="apply_job_form white-bg mt-4 p-3 border rounded shadow-sm slide-top">
+                <h4>Apply for the job</h4>
+                @{
+                    Html.RenderPartial("~/Views/jobApplies/jobapply.cshtml");
+                }
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="job_summary white-bg p-3 border rounded ">
+                <div class="summery_header mb-3 slide-top">
+                    <h3>Job Summary</h3>
+                </div>
+                <div class="job_content slide-top">
+                    <ul class="list-unstyled">
+                        <li>Published on: <span>12 Nov, 2019</span></li>
+                        <li>Vacancy: <span>2 Positions</span></li>
+                        <li>Salary: <span>$50k - $120k/year</span></li>
+                        <li>Location: <span>California, USA</span></li>
+                        <li>Job Nature: <span>Full-time</span></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+        </div>
+    </div>
+</div>

@@ -1,0 +1,26 @@
+﻿
+.scroll-container {
+    white-space: nowrap;
+    position: relative;
+ width:max-content;
+    /* Adjust height as needed */
+}
+
+.scroll-content {
+    
+    width:max-content;
+    animation: scroll-left 25s linear infinite;
+}
+
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0%); /* Start from right edge */
+    }
+   
+
+    100% {
+        transform: translateX(-100%); /* End at left edge */
+    }
+}
+
+

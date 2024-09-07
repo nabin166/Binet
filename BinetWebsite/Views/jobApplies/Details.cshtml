@@ -1,0 +1,54 @@
+﻿@model BinetWebsite.Models.jobApply
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>jobApply</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.JobTitle)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.applicantName)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.applicantName)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.applicantDescription)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.applicantDescription)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.portfolioLink)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.portfolioLink)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.applicantCoverletter)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.applicantCoverletter)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.CV)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.CV)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.JobId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>

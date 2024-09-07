@@ -1,0 +1,55 @@
+﻿@model BinetWebsite.Models.Contactpage
+
+<div asp-validation-summary="All" class="text-danger"></div>
+
+<form asp-action="Createcontact" asp-controller="Contactpages"  method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input asp-for="Contactfor" class="form-control visually-hidden" value="Contactfor.Normal" placeholder="Name" />
+    <div class="row">
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" placeholder="Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="mb-3">
+                <label asp-for="Email" class="control-label"></label>
+                <input asp-for="Email" class="form-control" placeholder="Email" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="mb-3">
+                <label asp-for="Subject" class="control-label"></label>
+                <textarea asp-for="Subject" class="form-control" placeholder="Subject"></textarea>
+                <span asp-validation-for="Subject" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="mb-3">
+                <label asp-for="Message" class="control-label"></label>
+                <textarea asp-for="Message" class="form-control" placeholder="Message"></textarea>
+                <span asp-validation-for="Message" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="mb-3">
+                <input id="btnclk" type="submit" value="Message" class="btn btn-primary" />
+            </div>
+        </div>
+    </div>
+</form>
+
+
+@section Scripts {
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
+
+@* <script>
+    document.getElementById("btnclk").onclick = (e) => { e.preventDefault(); console.log("click"); }
+</script>  *@
+

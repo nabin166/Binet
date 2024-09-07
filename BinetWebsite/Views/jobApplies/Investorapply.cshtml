@@ -1,0 +1,46 @@
+﻿@model BinetWebsite.Models.jobApply
+
+<form asp-action="Investorapply" asp-controller="jobApplies" method="post" enctype="multipart/form-data">
+    <input asp-for="JobTitle" class="form-control visually-hidden" value="Level.BinetGold" placeholder="Name" />
+    <div class="row">
+        <div class="col-md-6 mb-3">
+            <div class="input_field">
+                <label  class="control-label">InvestorName</label>
+                <input asp-for="applicantName" class="form-control" />
+                <span asp-validation-for="applicantName" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-6 mb-3">
+            <div class="input_field">
+                <label  class="control-label">InvestorEmail</label>
+                <input asp-for="applicantEmail" class="form-control" />
+                <span asp-validation-for="applicantEmail" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-12 mb-3">
+            <div class="input_field">
+                <label  class="control-label">CompanyName</label>
+                <input asp-for="portfolioLink" class="form-control" />
+                <span asp-validation-for="portfolioLink" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-12 mb-3">
+            <div class="input-group">
+                <input asp-for="PhotoPath" type="file" class="form-control" id="inputGroupFile03" aria-describedby="inputGroupFileAddon03">
+                <label class="input-group-text" id="inputGroupFileAddon03"><i class="fa fa-cloud-upload" aria-hidden="true"></i> Upload CV</label>
+            </div>
+        </div>
+        <div class="col-md-12 mb-3">
+            <div class="input_field">
+                <label  class="control-label">Description</label>
+                <input asp-for="applicantDescription" class="form-control" />
+                <span asp-validation-for="applicantCoverletter" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="submit_btn">
+                <button class="btn boxed-btn3 w-100 bg-success" type="submit">Apply Now</button>
+            </div>
+        </div>
+    </div>
+</form>

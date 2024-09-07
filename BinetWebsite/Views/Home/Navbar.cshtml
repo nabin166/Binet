@@ -1,0 +1,139 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+@* Sm Navbar *@
+<div id="bardisplay" class="container-fluid position-fixed top-0  p-0 shadow-sm  " style="z-index:25;height:25px; width:100dvw;background-color:whitesmoke; ">
+ 
+      @*   <div class="d-flex justify-content-center active"><a class="Smicon smactive" href="#home"><i class="fa-lg fa-solid fa-house"></i></a></div>
+        <div class=" d-flex justify-content-center"><a class="Smicon" href="#aboutus"><i class="fa-lg fa-solid fa-users"></i></a></div>
+        <div class=" d-flex justify-content-center"><a class="Smicon" href="#project"><i class="fa-lg fa-solid fa-list-check"></i></a></div>
+        <div class=" d-flex justify-content-center"><a class="Smicon" href="#service"><i class="fa-lg fa-solid fa-gears"></i></a></div>
+        <div class=" d-flex justify-content-center"><a class="Smicon" href="#testimonial"><i class="fa-lg fa-solid fa-clipboard-check"></i></a></div>
+        <div class=" d-flex justify-content-center"><a class="Smicon" asp-action=""><i class="fa-lg fa-solid fa-phone"></i></a></div>
+        <a class="d-inline-block Navbar-link Navbartabsm fw-bold text-success text-capitalize " asp-action="Careerpage">Career</a> *@
+        <ul class="col-lg-12 d-flex h-100 justify-content-evenly align-items-center  flex-row  list-unstyled  " id="navbaractive">
+            <li><a class="d-inline-block Navbar-link Navbartabsm " href="#home"><i class="fa-lg fa-solid fa-house"></i></a></li>
+            <li><a class="d-inline-block Navbar-link Navbartabsm" href="#aboutus"><i class="fa-lg fa-solid fa-users"></i></a></li>
+            <li><a class="d-inline-block Navbar-link Navbartabsm" href="#project"><i class="fa-lg fa-solid fa-list-check"></i></a></li>
+            <li><a class="d-inline-block Navbar-link Navbartabsm" href="#service"><i class="fa-lg fa-solid fa-gears"></i></a></li>
+            <li><a class="d-inline-block Navbar-link Navbartabsm" href="#testimonial"><i class="fa-lg fa-solid fa-clipboard-check"></i></a></li>
+            <li><a class="d-inline-block Navbar-link Navbartabsm"><i class="fa-lg fa-solid fa-phone"></i></a></li>
+            <li><a class="d-inline-block Navbar-link Navbartabsm fw-bold text-success text-capitalize " asp-action="Careerpage">Career</a></li>
+        </ul>
+
+</div>
+
+@* Navbar *@
+
+<div class=" row px-lg-5 position-fixed top-0 w-100 m-0 shadow-sm " style="z-index:20; height:95px; " id="stickynavbar">
+    <div class="col-lg-4 col-md-2 col justify-content-between align-items-center" style="height:100%;">
+        @* Binet logo *@
+   
+            <a asp-action=""><img id="logopos" style="width:7rem; position:relative; top:-7px; " src="~/logo/Binetlogo.png" alt="Alternate Text" /></a>
+
+       
+        
+    </div>
+    <div class="col-lg-8 col-md-10  col" style="padding-bottom:0px; height:100%;">
+        @* lg Navbar *@
+        <div id="navdisplay">
+            <div class="d-flex flex-row justify-content-between ps-lg-5 text-center " style="height:7rem">
+                <ul class="d-flex flex-row gap-lg-2 list-unstyled  " id="navbaractivelg">
+                    <li><a class="d-inline-block Navbar-link Navbartab active" href="#home">Home</a></li>
+                    <li><a class="d-inline-block Navbar-link Navbartab" href="#aboutus">About us</a></li>
+                    <li><a class="d-inline-block Navbar-link Navbartab" href="#project">Projects</a></li>
+                    <li><a class="d-inline-block Navbar-link Navbartab" href="#service">Services</a></li>
+                    <li><a class="d-inline-block Navbar-link Navbartab" href="#testimonial">Testimonial</a></li>
+                </ul>
+                <div class="row">
+                    <div class="col"><a class=" px-3 py-2 ms-2 fw-bold text-success text-capitalize " asp-action="Careerpage">Career</a><a class="text-white rounded-pill px-3 py-2 contactus " asp-action="">Contact us</a></div>
+                </div>
+            </div>
+        </div>
+      
+       
+        @*   <div id="bardisplay" style=" margin-top:25px;" >
+        <div class ="d-flex justify-content-end">
+        <button id="Togglebutton"> <i class="fa-solid fa-bars bars"></i></button>
+        </div>
+        </div> *@
+    </div>
+  
+
+</div>
+<script>
+
+    //script.js  for sm
+    document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('#navbaractive li a');
+
+    function updateNavLinks() {
+        let index = sections.length;
+
+        while(--index && window.scrollY + 130 < sections[index].offsetTop) {}
+        
+        navLinks.forEach((link) => {
+            link.classList.remove('active');
+        });
+
+        if (navLinks[index]) {
+            navLinks[index].classList.add('active');
+        }
+    }
+
+    window.addEventListener('scroll', updateNavLinks);
+    updateNavLinks(); // Initialize on page load
+});
+    //script.js  for lg
+    document.addEventListener('DOMContentLoaded', function () {
+        const sections = document.querySelectorAll('section');
+        const navLinks = document.querySelectorAll('#navbaractivelg li a');
+
+        function updateNavLinks() {
+            let index = sections.length;
+
+            while (--index && window.scrollY + 130 < sections[index].offsetTop) { }
+
+            navLinks.forEach((link) => {
+                link.classList.remove('active');
+            });
+
+            if (navLinks[index]) {
+                navLinks[index].classList.add('active');
+            }
+        }
+
+        window.addEventListener('scroll', updateNavLinks);
+        updateNavLinks(); // Initialize on page load
+    });
+
+
+
+
+
+    var doc = document.getElementById("stickynavbar");
+
+    function update() {
+        var scrollY = window.scrollY || document.documentElement.scrollTop;
+
+        if(scrollY > 50) {
+            doc.style.backgroundColor = "white";
+            console.log("Scrolled past 30px");
+        }
+        else{
+            doc.style.backgroundColor = "rgba(76, 175, 80, 0) ";
+            console.log("Scrolled past 30px");
+        }
+        
+    }
+
+    // Initial check when the script first runs
+    update();
+
+    // Add event listener for scroll
+    window.addEventListener('scroll', update);
+</script>

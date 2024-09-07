@@ -1,0 +1,28 @@
+html {
+    font-size: 14px;
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    /*    font-size: calc(.5em + 1vw);*/
+    /*#326576*/
+    font-family: "Exo 2", sans-serif, Yu Gothic, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+   
+    overflow-x: hidden;
+    padding: 0px;
+    margin: 0px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(250,246,246,1) 0%, rgba(0,212,255,0.051505636434261204) 100%);
+}
+

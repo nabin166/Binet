@@ -1,0 +1,116 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+
+@* form seciton *@
+<div style="height:100px;"></div>
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-8">
+            <div class="job_details_header shadow-sm">
+                <div class="single_jobs white-bg d-flex justify-content-between p-3 border rounded">
+                    <div class="jobs_left d-flex align-items-center">
+                        <div class="thumb me-3">
+                            <img src="img/svg_icon/1.svg" alt="" class="img-fluid">
+                        </div>
+                        <div class="jobs_content">
+                            <h2 class="featurette-heading text-center py-5 slide-top"> Invest <span class="text-muted">(Binet Gold App)</span></h2>
+                           
+                        </div>
+                    </div>
+                    <div class="jobs_right">
+                        <div class="apply_now">
+                            <a class="heart_mark" href="#"><i class="ti-heart text-success"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="descript_wrap white-bg mt-4 p-3 border rounded shadow-sm">
+                <div class="single_wrap mb-3 slide-top">
+                    <h4>Binet Gold App</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+                    <p>Variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+                </div>
+                <div class="single_wrap mb-3 slide-top">
+                    <h4>Why to Invest?</h4>
+                    <ul>
+                        <li>The applicants should have experience in the following areas.</li>
+                        <li>Have sound knowledge of commercial activities.</li>
+                        <li>Leadership, analytical, and problem-solving abilities.</li>
+                        <li>Should have vast knowledge in IAS/ IFRS, Company Act, Income Tax, VAT.</li>
+                    </ul>
+                </div>
+                <div class="single_wrap mb-3 slide-top">
+                    <h4>What We Return ?</h4>
+                    <ul>
+                        <li>The applicants should have experience in the following areas.</li>
+                        <li>Have sound knowledge of commercial activities.</li>
+                        <li>Leadership, analytical, and problem-solving abilities.</li>
+                        <li>Should have vast knowledge in IAS/ IFRS, Company Act, Income Tax, VAT.</li>
+                    </ul>
+                </div>
+                <div class="single_wrap slide-top">
+                    <h4>Benefits</h4>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p>
+                </div>
+            </div>
+            <div class="apply_job_form white-bg mt-4 p-3 border rounded shadow-sm slide-top">
+                <h4>Apply for Invest</h4>
+                @{
+                    Html.RenderPartial("~/Views/jobApplies/Investorapply.cshtml");
+                }
+            </div>
+        </div>
+        @* Gallary Section *@
+
+        <div class="container" style="width:80dvw; height:fit-content;">
+            <div class="lightbox" data-mdb-lightbox-init>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="~/investscreenshots/binetlogin.webp"
+                             data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
+                             alt="Table Full of Spices"
+                             class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+                        <img src="~/investscreenshots/Binetthree.webp"
+                             data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
+                             alt="Coconut with Strawberries"
+                             class="w-100 shadow-1-strong rounded" />
+                    </div>
+                    <div class="col-lg-6">
+                        <img src="~/investscreenshots/binettwo.webp"
+                             data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
+                             alt="Dark Roast Iced Coffee"
+                             class="w-100 shadow-1-strong rounded" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @* <div class="col-lg-4">
+            <div class="job_summary white-bg p-3 border rounded ">
+                <div class="summery_header mb-3 slide-top">
+                    <h3>Summary</h3>
+                </div>
+                <div class="job_content slide-top">
+                    <ul class="list-unstyled">
+                        <li>Published on: <span>12 Nov, 2019</span></li>
+                        <li>Vacancy: <span>2 Positions</span></li>
+                        <li>Salary: <span>$50k - $120k/year</span></li>
+                        <li>Location: <span>California, USA</span></li>
+                        <li>Job Nature: <span>Full-time</span></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div> *@
+    </div>
+</div>

@@ -1,0 +1,65 @@
+﻿@model IEnumerable<BinetWebsite.Models.jobApply>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.JobTitle)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.applicantName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.applicantDescription)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.portfolioLink)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.applicantCoverletter)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CV)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.JobTitle)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.applicantName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.applicantDescription)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.portfolioLink)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.applicantCoverletter)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CV)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.JobId">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.JobId">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.JobId">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

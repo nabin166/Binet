@@ -1,0 +1,461 @@
+﻿body {
+    
+}
+
+.showcarrer {
+    display: none !important;
+}
+/*Typing Demo homepage*/
+.typing-demo {
+    margin: 0px;
+    width: 11ch;
+    animation: typing 2s steps(12), blink .5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+}
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent
+    }
+}
+.bepartbackground {
+    color: white;
+    height: 400px;
+    width: 100vw;
+    background-image: url(../logo/backgroundscr.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+}
+.textcolor {
+    color: #326576;
+}
+.primarycolor {
+    background-color: #326576;
+}
+.linecolor {
+    background-color: #326576 !important;
+    opacity:50%;
+}
+.coverimage{
+    width:90%!important;
+    transition-duration:500ms!important;
+ 
+}
+.coverimage:hover{
+    transform:scale(1.02,1.02);
+}
+a{
+    text-decoration:none;
+    white-space:nowrap;    
+}
+.Navbartab {
+    color: black;
+    width: 6rem;
+    height: 6rem;
+    text-align: center;
+    line-height: 6rem; /* Center text vertically */
+   
+}
+.Navbartabsm {
+    color: black;
+    
+    height: fit-content;
+    text-align: center;
+    line-height: 2rem; /* Center text vertically */
+}
+
+
+#navbaractive li {
+    font-weight: bold;
+}
+    #navbaractive li a:hover {
+        background-color: rgb(241 128 128 / 0.10);
+        border-bottom: 4px solid red;
+        font-weight: bold;
+        color: red;
+    }
+
+    #navbaractive li a:active
+    {
+        background-color: rgb(255 0 0 / 0.1);
+        border-bottom: 4px solid red;
+        font-weight: bold;
+        color: red;
+    }
+
+    #navbaractive li .active
+    {
+        background-color: rgb(255 0 0 / 0.1);
+        border-bottom: 4px solid red;
+        font-weight: bold;
+        color: red;
+    }
+
+    #navbaractivelg li {
+    font-weight: bold;
+}
+    #navbaractivelg li a:hover {
+        background-color: rgb(241 128 128 / 0.10);
+        border-bottom: 4px solid red;
+        font-weight: bold;
+        color: red;
+    }
+
+    #navbaractivelg li a:active
+    {
+        background-color: rgb(255 0 0 / 0.1);
+        border-bottom: 4px solid red;
+        font-weight: bold;
+        color: red;
+    }
+
+    #navbaractivelg li .active
+    {
+        background-color: rgb(255 0 0 / 0.1);
+        border-bottom: 4px solid red;
+        font-weight: bold;
+        color: red;
+    }
+.careershowing {
+    display:none!important;
+}
+.contactus {
+    background-color: #C74C3C;
+    line-height: 6rem;
+}
+.contactus:hover{
+    opacity:80%;
+}
+#Togglebutton{
+    border:none;
+    background-color:none;
+    background:none;
+    text-decoration:none;
+    width:30px;
+}
+#Togglebutton:hover{
+    color:lightslategray;
+}
+.Smicon {
+    
+    color: #326576;
+    opacity: 90%;
+}
+    .Smicon:hover {
+        color: #C74C3C;
+    }
+.smactive {
+   color: #C74C3C;
+}
+
+.getstartedbutton {
+    background-color: #C74C3C!important;
+    color:white;
+    width:fit-content;
+    margin-left:10px;
+    border-radius:20px;
+ 
+}
+.getstartedbutton:hover {
+        opacity: 80%;
+ }
+.faarrow{
+    color:white;
+    margin-left:10px;
+}
+
+.aboutuscard {
+    background-color: #54A8C4 !important;
+    opacity:90%;
+    color: white;
+    border-radius:50px;
+    margin:5px;
+}
+.textshadow{
+   text-shadow:0.5px 0.5px 1px black; 
+}
+.borderimg {
+    position: relative;
+    right:20%;
+    bottom:15%;
+    z-index:15;
+    padding: 10px;
+    background-color:white;
+    border-radius: 20px;
+    height:110%;
+    width:110%;
+}
+
+.circle {
+    display: inline-flex; /* Use flexbox to center text */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    width: 40px; /* Set the width of the circle */
+    height: 40px; /* Set the height of the circle */
+    border-radius: 50%; /* Make the element circular */
+    color: #fff; /* Text color */
+    font-size: 18px; /* Adjust font size as needed */
+    font-weight: bold; /* Make the text bold */
+    text-align: center; /* Center text alignment */
+}
+.whitespace{
+    white-space:nowrap;
+}
+.ancorfull {
+    display: block; /* Makes the <a> tag behave like a block-level element */
+    width: 100%; /* Ensures the <a> tag takes the full width of the parent */
+    padding: 10px;
+    border-bottom: 1px solid #326576;
+    color: #326576;
+    position: relative;
+    right: 0px;
+
+    
+}
+
+ .ancorfull:hover {
+        color: red;
+        opacity: 80%;
+        border-bottom: 1px solid red;
+ }
+
+.activeancorfull {
+    color: red;
+    opacity: 80%;
+    border-bottom: 1px solid red;
+}
+.investbutton {
+    background-color: #C74C3C !important;
+    color: white;
+    width: fit-content;
+    
+    border-radius: 20px;
+    border:none;
+
+}
+.investbutton:hover {
+    opacity: 80%;
+}
+.image{
+    background-image:url("/logo/frame.png");
+    background-repeat:no-repeat;
+    
+}
+.readmorebutton {
+    background-color: #C74C3C !important;
+    color: white;
+    width: fit-content;
+    border-radius: 20px;
+    border: none;
+    
+}
+    .readmorebutton:hover {
+        opacity: 80%;
+    }
+
+
+.latestprojectbtn {
+    border: 2px solid #326576 !important;
+    color: #326576;
+    width: fit-content;
+    border-radius: 7px;
+    padding: 5px;
+    border: none;
+}
+    .latestprojectbtn:hover {
+        opacity: 80%;
+    }
+
+.borderline {
+    border: 3px solid #326576;
+    
+    width:90%;
+    padding:5px;
+   
+}
+.contactnow{
+    background-color: #C74C3C !important;
+    color: white;
+    border-radius: 20px;
+    border: none;
+}
+.contactnow:hover{
+    opacity:80%;
+}
+.subscribecolor {
+    background-color: #61937B !important;
+
+}
+.subscribecolor:hover{
+    opacity:80%;
+}
+.testbtn{
+    color: red !important;
+
+   
+    cursor: pointer !important;
+ 
+    white-space: nowrap !important;
+    display: block; /* Makes the <a> tag behave like a block-level element */
+    width: 100%; /* Ensures the <a> tag takes the full width of the parent */
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid red !important;
+    position: relative;
+    right: 0px;
+}
+
+.customcarobutton{
+    background: none !important;
+    color: inherit !important;
+    font: inherit !important;
+    cursor: pointer !important;
+    outline: inherit !important;
+    white-space: nowrap !important;
+    display: block; /* Makes the <a> tag behave like a block-level element */
+    width: 100%; /* Ensures the <a> tag takes the full width of the parent */
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+    border-top: none;
+    border-bottom: 1px solid #326576!important;
+    position: relative;
+    right: 0px;
+}
+
+.customcarobutton:hover {
+    border-bottom: 1px solid red !important;
+    color: red !important;
+}
+.custombutton:hover {
+    border-bottom: 1px solid red !important;
+    color: red !important;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .showcarrer {
+        display: block!important;
+    }
+    .bepartbackground {
+        color: white;
+        height:fit-content;
+        
+        background-image: url(../logo/backgroundscr.jpg);
+        
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        background-attachment: fixed;
+    }
+    .logopic img {
+        height: 102px;
+    }
+    
+    body{
+        overflow-x:hidden;
+    }
+    .customcarobutton{
+        font-size:9px!important;
+    }
+   #logopos{
+       width:4rem;
+       margin-top:15px;
+   }
+
+    .logopic {
+        width: 100vw;
+    }
+    .coverimage{
+        width: 90dvw;
+    }
+    .careershowing{
+        display: block!important;
+    }
+   
+}
+.technologyimg{
+   
+    animation: floatImage 1s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.2rem);
+    
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+.rotateonce{
+   transition-duration:0.5s ;
+}
+.rotateonce:hover{
+    transform: scale(1.03);
+}
+
+.white-bg {
+    background-color: #fff;
+}
+
+.boxed-btn3 {
+    background-color: #007bff;
+    color: #fff;
+}
+/*Technologyused*/
+.logopic div img {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+ 
+    transition-duration:1s;
+}
+.logopic div img:hover {
+    transform:scale(1.2,1.2);
+}
+
+.logopic {
+    width: 90vw;
+}
+companypic {
+    width: 100vw;
+}
+/*Technologyused*/
+.companypic div img {
+    width: 120px;
+    height:120px;
+    object-fit: scale-down;
+    transition-duration: 1s;
+}
+
+    .companypic div img:hover {
+        transform: scale(1.2,1.2);
+    }
+.cardhover{
+    transition-duration:500ms;
+}
+    .cardhover:hover {
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        background-color: aliceblue;
+        color: #326576;
+        transform: scale(1.005,1.005);
+    }
