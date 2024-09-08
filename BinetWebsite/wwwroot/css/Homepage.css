@@ -28,7 +28,6 @@
 }
 .ourservicebackground {
     color: white;
-    
     width: 100vw;
     height:fit-content;
     background-image: url(../logo/backgroundscr.jpg);
@@ -37,6 +36,16 @@
     display: flex;
     flex-direction:column;
     align-items: center;
+    background-attachment: fixed;
+}
+.technologyusedbackground{
+    color: white;
+    width: 100vw;
+    height: fit-content;
+    background-image: url(../logo/backgroundbluetwo.webp);
+    background-repeat: no-repeat;
+    background-size: 100%;
+   
     background-attachment: fixed;
 }
 .textcolor {
@@ -361,6 +370,15 @@ a{
         align-items: center;
         background-attachment: fixed;
     }
+    .technologyusedbackground {
+        color: white;
+        
+        height: fit-content;
+        background-image: url(../logo/backgroundbluetwo.webp);
+      
+        background-size: cover;
+        background-attachment: fixed;
+    }
     .logopic img {
         height: 102px;
     }
@@ -459,3 +477,26 @@ companypic {
         color: #326576;
         transform: scale(1.005,1.005);
     }
+
+.activeshow li {
+    cursor: pointer;
+    white-space: nowrap;
+   
+}
+.activeshow .active{
+    color:red;
+}
+
+.justifytext{
+    text-align:justify;
+
+}
+#Customactive ul li button {
+    border: none;
+    outline: none;
+    padding: 0px;
+    background-color: none !important;
+    background: none !important;
+   
+}
+
