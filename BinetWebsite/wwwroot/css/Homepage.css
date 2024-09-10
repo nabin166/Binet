@@ -2,14 +2,32 @@
     
 }
 
+.investbuttoninv {
+    background-color: orange !important;
+    color: white;
+    width: fit-content;
+    border-radius: 20px;
+    border: none;
+    transition-duration:300ms;
+}
+
+    .investbuttoninv:hover {
+        background-color: orangered !important;
+        color: white;
+        width: fit-content;
+        border-radius: 20px;
+        border: none;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+
 .showcarrer {
     display: none !important;
 }
 /*Typing Demo homepage*/
 .typing-demo {
     margin: 0px;
-    width: 11ch;
-    animation: typing 2s steps(12), blink .5s step-end infinite alternate;
+    width: 8ch;
+    animation: typing 2s steps(8), blink .5s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 3px solid;
@@ -246,18 +264,7 @@ a{
     opacity: 80%;
     border-bottom: 1px solid red;
 }
-.investbutton {
-    background-color: #C74C3C !important;
-    color: white;
-    width: fit-content;
-    
-    border-radius: 20px;
-    border:none;
 
-}
-.investbutton:hover {
-    opacity: 80%;
-}
 .image{
     background-image:url("/logo/frame.png");
     background-repeat:no-repeat;
