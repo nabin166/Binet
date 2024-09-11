@@ -2,6 +2,7 @@
     
 }
 
+
 .investbuttoninv {
     background-color: orange !important;
     color: white;
@@ -507,3 +508,13 @@ companypic {
    
 }
 
+.testomonialhover {
+    background-color: white !important;
+    color: black !important;
+    transition-duration: 500ms !important;
+}
+
+.testomonialhover:hover {
+        background-color: white !important;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
+    }
