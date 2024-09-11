@@ -1,14 +1,4 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-
+﻿
 
 @* form seciton *@
 <div style="height:100px;"></div>
@@ -28,7 +18,7 @@
                                         <img src="img/svg_icon/1.svg" alt="" class="img-fluid">
                                     </div>
                                     <div class="jobs_content">
-                                        <h2 class="featurette-heading text-center py-5 slide-top"> Invest <span class="text-muted">(Binet Gold App)</span></h2>
+                                        <h2 class="featurette-heading text-center py-5 slide-top"> <span class="text-muted" id="title"></span></h2>
 
                                     </div>
                                 </div>
@@ -41,77 +31,29 @@
                         </div>
                         <div class="descript_wrap white-bg mt-4 p-3 border rounded shadow-sm">
                             <div class="single_wrap mb-3 slide-top">
-                                <h4>Binet Gold App</h4>
-                                <p>
-                                    Binet Gold App seamlessly synchronizes data with Points One, ensuring that information such as inventory levels, sales figures, and customer details are consistently updated across both platforms.
-                                </p>
-                                @* <p>Variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p> *@
-                            </div>
+                                <div id="txt"></div>
+                                <p id="content">
+                               </p>
+                                </div>
                             <div class="single_wrap mb-3 slide-top">
                                 <h4>Why to Invest?</h4>
                                 <ul>
-                                    <li>Reduced manual data entry and improved accuracy with synchronized data.</li>
-                                    <li>Potential increase in sales and cost savings from reduced errors.</li>
-                                    <li>Enhanced customer service through up-to-date details and more effective marketing.</li>
-                                    <li>Streamlined operations with seamless real-time data synchronization and fewer data errors.</li>
-                                    <li>Improved decision-making with data-driven insights and enhanced reporting capabilities.</li>
-                                    <li>Competitive advantage through greater agility and increased customer satisfaction.</li>
-                               
+                                    <li id="whyinvestcontent"></li>
+                             
                                 </ul>
                             </div>
                             <div class="single_wrap mb-3 slide-top">
                                 <h4>What We Return ?</h4>
                                 <ul>
-                                    <li>
-                                        <strong>Efficiency Gains:</strong>
-                                        <ul>
-                                            <li>Reduced Manual Data Entry: Automated synchronization reduces the need for manual data entry, saving time and reducing errors.</li>
-                                            <li>Improved Accuracy: Consistent data across platforms minimizes discrepancies, leading to more reliable information.</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <strong>Financial Gains:</strong>
-                                        <ul>
-                                            <li>Increased Sales: Enhanced data insights and better inventory management can lead to improved sales and revenue.</li>
-                                            <li>Cost Savings: Reduction in labor costs associated with manual data management and fewer errors that can result in costly issues.</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <strong>Customer Insights:</strong>
-                                        <ul>
-                                            <li>Better Customer Service: Access to updated customer details helps in providing personalized service and improving customer satisfaction.</li>
-                                            <li>Enhanced Marketing: More accurate customer data allows for more targeted and effective marketing campaigns.</li>
-                                        </ul>
-                                    </li>
+                                    <li id="whatreturncontent"></li>
                                 </ul>
                             </div>
                             <div class="single_wrap slide-top">
                                 <h4>Benefits</h4>
-                                @* <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing.</p> *@
-                                <p>The Binet Gold App, when integrated with Points One, offers numerous advantages that significantly enhance business operations. By streamlining processes and improving data management, it provides valuable benefits across various aspects of business performance. Here’s how:</p>
+                                
 
                                 <ul>
-                                    <li>
-                                        <strong>Streamlined Operations:</strong>
-                                        <ul>
-                                            <li>Seamless Integration: Real-time synchronization means that inventory levels, sales figures, and customer details are always up-to-date, leading to smoother operations.</li>
-                                            <li>Error Reduction: Less manual intervention reduces the risk of data errors and inconsistencies.</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <strong>Improved Decision-Making:</strong>
-                                        <ul>
-                                            <li>Data-Driven Insights: With synchronized data, businesses can make more informed decisions based on accurate and up-to-date information.</li>
-                                            <li>Enhanced Reporting: Better access to consolidated data can improve reporting capabilities and business analytics.</li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <strong>Competitive Advantage:</strong>
-                                        <ul>
-                                            <li>Agility: Faster response times and better data management can give your business a competitive edge in the market.</li>
-                                            <li>Customer Experience: Enhanced ability to understand and respond to customer needs can improve overall customer satisfaction and loyalty.</li>
-                                        </ul>
-                                    </li>
+                                    <li id="benefitcontent"></li>
                                 </ul>
 
                             </div>
@@ -124,41 +66,80 @@
                         </div>
                     </div>
                     <div class="col-lg-5">
-                        <img src="~/investscreenshots/binetlogin.webp"
-                             data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Slides/1.webp"
-                             alt="Table Full of Spices"
-                             class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
-                        <img src="~/investscreenshots/Binetthree.webp"
-                             data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Square/1.webp"
-                             alt="Coconut with Strawberries"
-                             class="w-100 shadow-1-strong rounded" />
-                        <img src="~/investscreenshots/binettwo.webp"
-                             data-mdb-img="https://mdbcdn.b-cdn.net/img/Photos/Vertical/1.webp"
-                             alt="Dark Roast Iced Coffee"
-                             class="w-100 shadow-1-strong rounded" />
+                           <div id="picone"></div>
+                        <div id="pictwo"></div>
+                        <div id="picthree"></div>
+                      
                     </div>
         
                 </div>
             </div>
         </div>
 
-        @* <div class="col-lg-4">
-            <div class="job_summary white-bg p-3 border rounded ">
-                <div class="summery_header mb-3 slide-top">
-                    <h3>Summary</h3>
-                </div>
-                <div class="job_content slide-top">
-                    <ul class="list-unstyled">
-                        <li>Published on: <span>12 Nov, 2019</span></li>
-                        <li>Vacancy: <span>2 Positions</span></li>
-                        <li>Salary: <span>$50k - $120k/year</span></li>
-                        <li>Location: <span>California, USA</span></li>
-                        <li>Job Nature: <span>Full-time</span></li>
-                    </ul>
-                </div>
-            </div>
-
-
-        </div> *@
+    
     </div>
 </div>
+
+<script>
+
+    var content = {
+        "sections": [
+            {
+                "title": "Binet Gold App",
+                "content": "Binet Gold App seamlessly synchronizes data with Points One, ensuring that information such as inventory levels, sales figures, and customer details are consistently updated across both platforms.",
+                "whyinvestcontent": "Investing in the Binet Gold App provides several benefits, including reduced manual data entry and improved accuracy with synchronized data. Potential increases in sales and cost savings from reduced errors, enhanced customer service through up-to-date details, and streamlined operations with real-time data synchronization are significant advantages. Additionally, improved decision-making with data-driven insights and enhanced reporting capabilities contribute to a competitive advantage and increased customer satisfaction.",
+                "whatreturncontent": "The Binet Gold App offers several key returns: Efficiency Gains include reduced manual data entry and improved accuracy through automated synchronization. Financial Gains involve increased sales due to enhanced data insights and cost savings from reduced manual data management. Customer Insights are enhanced with better customer service from updated details and improved marketing from more accurate customer data.",
+                "benefitcontent": "The Binet Gold App, when integrated with Points One, delivers substantial benefits. Streamlined Operations are achieved through seamless integration and error reduction, leading to smoother processes. Improved Decision-Making is facilitated by data-driven insights and enhanced reporting capabilities. Competitive Advantage is gained through agility in response times and an enhanced ability to meet customer needs, resulting in greater satisfaction and loyalty.",
+                "imageslist": [
+                    {
+                        "src": "/investscreenshots/binetlogin.webp",
+                        "alt": "Binet Login Screen"
+                    },
+                    {
+                        "src": "/investscreenshots/Binetthree.webp",
+                        "alt": "Binet Three View"
+                    },
+                    {
+                        "src": "/investscreenshots/binettwo.webp",
+                        "alt": "Binet Two View"
+                    }
+                ]
+            }
+        ]
+    };
+    const productid = window.location.pathname.split('/').pop(); 
+    console.log('Item ID:', productid);
+
+
+    document.getElementById("title").innerText = content.sections[productid].title;
+    document.getElementById("content").innerText = content.sections[productid].content
+    document.getElementById("whyinvestcontent").innerText = content.sections[productid].whyinvestcontent;
+    document.getElementById("whatreturncontent").innerText = content.sections[productid].whatreturncontent;
+    document.getElementById("benefitcontent").innerText = content.sections[productid].benefitcontent;
+
+    // Use the image source from the content object
+    var imgSrc0 = content.sections[productid].imageslist[0].src;  // Directly access 'src'
+    var imgSrc1 = content.sections[productid].imageslist[1].src;  // Directly access 'src'
+    var imgSrc2 = content.sections[productid].imageslist[2].src;  // Directly access 'src'
+
+    // Update the innerHTML of the element with id "pic1"
+    document.getElementById("picone").innerHTML = `
+            <img src="${imgSrc0}"
+                
+                 alt="${content.sections[productid].imageslist[0].alt}"
+                 class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+        `;
+    document.getElementById("pictwo").innerHTML = `
+                <img src="${imgSrc1}"
+
+                     alt="${content.sections[productid].imageslist[1].alt}"
+                     class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+            `;
+    document.getElementById("picthree").innerHTML = `
+                <img src="${imgSrc2}"
+
+                     alt="${content.sections[productid].imageslist[2].alt}"
+                     class="w-100 mb-2 mb-md-4 shadow-1-strong rounded" />
+            `;
+          
+</script>

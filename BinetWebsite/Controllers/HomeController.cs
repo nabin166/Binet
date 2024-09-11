@@ -70,7 +70,8 @@ namespace BinetWebsite.Controllers
         {
             return View();
         }
-        public IActionResult Invest()
+        [HttpGet("Invest/{id}")]
+        public IActionResult Invest(int id)
         {
             return View();
         }
