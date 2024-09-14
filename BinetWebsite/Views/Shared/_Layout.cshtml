@@ -3,9 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BinetWebsite</title>
+    <link rel="icon" href="/logo/Binetlogo.png" type="image/icon type">
+    <title>Investment Opportunities in Tech | Binet Technologies</title>
+    <!-- Meta Description -->
+    <meta name="description" content="Invest in Binet Technologies, a leading software development company. Discover lucrative investment opportunities in our innovative tech projects.">
+    <!-- Keywords -->
+    <meta name="keywords" content="tech investment, software development investment, investment opportunities, Binet Technologies, invest in tech, tech projects">
+   
+
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link href="~/css/Homepage.css" rel="stylesheet" />
+
+    <link href="~/css/Homepage.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link rel="stylesheet" href="/css/Homepage.css"/></noscript>
+
     <link href="~/css/Animationcss.css" rel="stylesheet" />
     <link href="~/css/Trustedbyscroll.css" rel="stylesheet" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
@@ -60,11 +70,11 @@
 
    
     @await RenderSectionAsync("Scripts", required: false)
-    <script src="~/js/Animation.js"></script>
-    <script src="~/js/Homepage.js"></script>
+    <script src="~/js/Animation.js" defer></script>
+    <script src="~/js/Homepage.js" defer></script>
     <script src="~/js/Viewpagecontent.js"></script>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="~/lib/jquery/dist/jquery.min.js" defer></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="~/js/site.js" asp-append-version="true" defer></script>
 </body>
 </html>
